@@ -1,0 +1,156 @@
+@font-face {
+  font-family: Inter;
+  src: url(./fonts/Inter-Regular.ttf);
+}
+
+@font-face {
+  font-family: Inter;
+  src: url(./fonts/Inter-Light.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url(./fonts/Inter-Bold.ttf);
+  font-weight: 700;
+}
+
+body {
+  background-color: #DCDFE4;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Inter;
+}
+
+footer {
+  background-color: #D2D1CC;
+  width: 100%;
+  border-top: 1px solid grey;
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px -5px 8px rgba(0,0,0,0.25);
+}
+
+.blur {
+  filter: blur(0px);
+  transition: ease 0.5s;
+}
+.blur.active {
+  filter: blur(10px);
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+#model {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  background-color: #000000c4;
+  align-items: center;
+  cursor: pointer;
+}
+
+#model div {
+  padding: 5px;
+  border-radius: 6px;
+  color: aliceblue;
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.6), 0 2px 6px rgba(0,0,0,0.5);
+}
+
+#model.inactive {
+  transition: 0.3s ease-in;
+  opacity: 0;
+}
+
+#img-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 750px;
+  padding: 5px;
+  margin-top: 15px;
+}
+
+#image {
+  border: gray solid 1px;
+  width: 100%;
+  border-radius: 100%;
+  box-shadow: 1px 1px 8px rgba(0,0,0,0.25), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+#img-caption {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 15px;
+  padding-bottom: 10px;
+}
+
+#tribute-info {
+  color: #f0f8ff;
+  width: 100%;
+}
+
+#genieImg {
+  display: flex;
+  align-items: center;
+}
+
+#genieImg img {
+  max-height: 150px;
+}
+
+#tribute-info p {
+  padding: 75px 10px;
+  max-width: 850px;
+}
+
+#tribute-info > div:first-child {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 15px;
+  background: linear-gradient(35deg, #2c283a, #272d30);
+}
+
+#quote {
+  background-color: #D2D1CC;
+  display: flex;
+  justify-content: space-between;
+}
+
+#quote div:first-child {
+  flex: 0 0 50%;
+  display: flex;
+  flex-direction: column;
+  color: #272d30;
+  justify-content: center;
+  padding-right: 15px;
+}
+
+#quote div:first-child *{
+  text-align: right;
+}
+
+#quote img {
+  height: 100%;
+}
