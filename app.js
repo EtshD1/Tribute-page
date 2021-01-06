@@ -2,7 +2,10 @@
 
   const modal = document.querySelector("#model");
 
+  const helpTimer = setTimeout(() => { document.querySelector("#help").style.bottom = 0; }, 4000);
+
   modal.addEventListener("click", () => {
+    clearTimeout(helpTimer);
     setTimeout(() => {
       modal.remove();
     }, 600);

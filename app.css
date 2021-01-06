@@ -154,3 +154,21 @@ footer {
 #quote img {
   height: 100%;
 }
+
+div#help {
+  display: flex;
+  position: fixed;
+  bottom: -50px;
+  left: 0;
+  width: 100%;
+  padding-bottom: 0;
+  justify-content: center;
+  transition: ease 0.5s;
+}
+
+div#help p {
+  padding: 15px 10px;
+  background-color: #272d30;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
